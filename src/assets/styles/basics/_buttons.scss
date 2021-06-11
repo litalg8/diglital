@@ -1,0 +1,32 @@
+
+button {
+    outline: none;
+    font-family: Spartan-Regular;
+    background-color: $clr2;
+    color:$clr3;
+    font-size: 1rem;
+    border: 1px solid $clr2;
+    text-transform: uppercase;
+    margin: 0;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 1rem;
+    a{
+        color:$clr3; 
+    }
+
+ 
+}
+
+.header-button {
+    background-color: transparent;
+    cursor: pointer;
+    color:$clr1; 
+    border: 1px solid $clr1;
+    &:hover{
+        color:#ffffff;
+        background-color: $clr1;
+    }
+}
+
+

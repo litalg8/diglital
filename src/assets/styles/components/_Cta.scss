@@ -1,0 +1,40 @@
+.cta {
+    width: 100%;
+    background-color: $clr2;
+    .cta-content {
+        .info-bullets {
+            .circle {
+                cursor: pointer;
+                margin-bottom: 20px;
+                height: 60px;
+                width: 60px;
+                text-align: center;
+                border-radius: 50%;
+                color: $clr5;
+                background-color: $clr6;
+                &:hover {
+                    background-color: $clr1;
+                    color: $clr2;
+                }
+            }
+            &:not(:last-child) {
+                margin: 0.2rem;
+            }
+        }
+        h2 {
+            padding: 10px;
+        }
+        .company-info {
+            width: 700px;
+            display:flex;
+            justify-content: space-evenly;
+            @include for-mobile-layout{
+                display: block;
+                width: 480px;
+
+            }
+        }
+    }
+
+
+}

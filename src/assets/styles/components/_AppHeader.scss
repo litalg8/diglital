@@ -1,0 +1,43 @@
+.main-nav {
+    .route-nav {
+        @include for-mobile-layout {
+            visibility: hidden;
+        }
+        li:not(:last-child) {
+            margin: 1rem;
+        }
+    }
+
+    .logo {
+        padding-top: 20px;
+        @include for-mobile-layout {
+            width: 4rem;
+            margin-left: 0.5rem;
+        }
+    }
+
+    li {
+        cursor: pointer;
+        a {
+
+            &:hover {
+                padding-bottom: 0.3em;
+                font-family: Spartan-SemiBold;
+                border-bottom: 0.2rem $clr1 solid;
+            }
+        }
+    }
+    div {
+        cursor: pointer;
+    }
+}
+
+.main-nav > .logo {
+    padding: 0;
+    font-size: 24px;
+    font-family: Pattaya-Regular;
+}
+
+.mobile-nav {
+    display: none;
+}
