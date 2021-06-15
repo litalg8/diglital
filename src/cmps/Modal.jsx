@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom'; 
+import ReactDOM from 'react-dom';
+import { ModalContext } from '../context/ModalContext'
 
-
-const Modal= () => {
-
-    return ReactDOM.createPortal (
-        <section className="modal-wrapper">
-            <div className="modal-container">
-            <button className="modal-btn">X</button>
-                This is modal content
-                <img className="full-size modal" src={designProjects.imgUrl}/>
-            </div>
-            
-        </section>,
-        document.querySelector('#modal-root')
-    )
+const Modal = () => {
+    let { modalContent, handleModal, modal } = React.useContext(ModalContext);
+    if (modal) {
+        return ReactDOM.createPortal(
+            <section className="modal-wrapper">
+                <div className="modal-container">
+                    <button className="modal-btn" onClick={() => handleModal()}>X</button>
+                    <p> {modalContent} </p>
+                    {/* <img className="full-size modal"/> */}
+                </div>
+            </section>,
+            document.querySelector('#modal-root')
+        )
+    } else return null;
 }
 
-export default Modal; 
+export default Modal;

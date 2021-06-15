@@ -66,48 +66,48 @@ const ProjectContextProvider = (props) => {
         {
             id: 7,
             title: 'Alma Coffee Shop',
-            desc: 'fun game with mobile design',
+            desc: 'digital design for facebook page',
             imgUrl: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1623078669/portfolio/1-1.png',
             type: 'javascript',
 
         },
         {
             id: 8,
-            title: 'MemeGenerator',
-            desc: 'create your own memes',
-            imgUrl: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1620217629/portfolio/memegen.png',
+            title: 'Alma Coffee Shop',
+            desc: 'digital design for facebook page',
+            imgUrl: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1620217629/portfolio/7-7.png',
             type: 'javascript',
 
         },
         {
             id: 9,
-            title: 'VueBooks',
-            desc: 'BookShop created with BookAPI & Vue',
-            imgUrl: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1620224012/portfolio/appsus.png',
+            title: 'freshpoint',
+            desc: 'digital gif for facebook page',
+            imgUrl: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1620224012/portfolio/11-11.gif',
             type: 'vue',
 
         },
         {
             id: 10,
-            title: 'WeatherApp',
-            desc: 'Fun WeatherApp created with React hooks',
-            imgUrl: '/minesweeper.PNG',
+            title: 'freshpoint',
+            desc: 'digital gif for facebook page',
+            imgUrl: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1620224012/portfolio/10-10.gif',
             type: 'react-hooks',
 
         },
         {
             id: 11,
-            title: 'Tuko',
-            desc: 'Online Events app created with React',
-            imgUrl: '/minesweeper.PNG',
+            title: 'shay & yaara',
+            desc: 'Wedding invitation design',
+            imgUrl: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1620224012/portfolio/2-2.png',
             type: 'react',
 
         },
         {
             id: 12,
-            title: 'FreshPoint Gif',
-            desc: 'facebook design for freshpoint',
-            imgUrl: '',
+            title: 'G Rishon',
+            desc: 'digital design for facebook page',
+            imgUrl:'https://res.cloudinary.com/dk67dcp9c/image/upload/v1620224012/portfolio/4-4.png',
             type: 'graphic-design',
 
         }

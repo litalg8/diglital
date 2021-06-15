@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { ProjectContext } from '../context/ProjectContext'
-// import Modal from './Modal'
+import { ModalProvider } from '../context/ModalContext'
 import { useHistory, useLocation } from 'react-router';
 import SwipeableViews from 'react-swipeable-views'
 import WebProjectsList from './WebProjects/WebProjectsList';
@@ -25,18 +25,14 @@ function Projects() {
         setView(view)
     }, [location.pathname])
 
-    // const [showModal,setShowModal] = useState(false)
-
-    // const openModal=()=>{
-    //     setShowModal(showModal => !showModal)
-    // }
     return (
         <div className="projects" >
-            {/* <Modal/> */}
-            <SwipeableViews index={view} onSwitching={handleChange} enableMouseEvents={true} >
-                <WebProjectsList webProjects={webProjects} />
-                <DesignProjectsList designProjects={designProjects} />
-            </SwipeableViews>
+            <ModalProvider>
+                <SwipeableViews index={view} onSwitching={handleChange} enableMouseEvents={true} >
+                    <WebProjectsList webProjects={webProjects} />
+                    <DesignProjectsList designProjects={designProjects} />
+                </SwipeableViews>
+            </ModalProvider>
         </div>
     )
 }

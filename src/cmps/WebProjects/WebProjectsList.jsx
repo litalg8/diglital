@@ -1,6 +1,8 @@
 import React from 'react'
-import WebProjectsPreview from './WebProjectsPreview'
 import {NavLink} from 'react-router-dom'
+import WebProjectsPreview from './WebProjectsPreview'
+
+
 
 function WebProjectsList({ webProjects }) {
 
@@ -26,7 +28,7 @@ function WebProjectsList({ webProjects }) {
             </ul>
         </header>
 
-            <ul className="projects-list project-grid flex container">
+            <ul className="projects-list project-grid flex container" >
                 {webProjects.map(webProject =>
                     <WebProjectsPreview webProject={webProject} key={webProject.id} />
                 )}
