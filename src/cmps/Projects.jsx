@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { ProjectContext } from '../context/ProjectContext'
-import { ModalProvider } from '../context/ModalContext'
 import { useHistory, useLocation } from 'react-router';
 import SwipeableViews from 'react-swipeable-views'
 import WebProjectsList from './WebProjects/WebProjectsList';
@@ -26,13 +25,11 @@ function Projects() {
     }, [location.pathname])
 
     return (
-        <div className="projects" >
-            <ModalProvider>
-                <SwipeableViews index={view} onSwitching={handleChange} enableMouseEvents={true} >
-                    <WebProjectsList webProjects={webProjects} />
-                    <DesignProjectsList designProjects={designProjects} />
-                </SwipeableViews>
-            </ModalProvider>
+        <div className="projects">
+            <SwipeableViews index={view} onSwitching={handleChange} enableMouseEvents={true} >
+                <WebProjectsList webProjects={webProjects} />
+                <DesignProjectsList designProjects={designProjects} />
+            </SwipeableViews>
         </div>
     )
 }

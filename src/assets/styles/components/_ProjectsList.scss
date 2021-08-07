@@ -31,7 +31,7 @@
                 &.current {
                     a {
                         color: $clr3;
-                        padding-bottom:.3em; 
+                        padding-bottom: 0.3em;
                         border-bottom: 0.3rem $clr1 solid;
                     }
                 }
@@ -40,5 +40,17 @@
                 }
             }
         }
+
     }
+
+    h2 {
+        visibility: hidden;
+        @include for-mobile-layout {
+            visibility: visible;
+        }
+    }
+}
+
+.project-card {
+    text-align: center;
 }

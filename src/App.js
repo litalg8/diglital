@@ -1,9 +1,9 @@
 import React, { useState, useRef } from 'react'
 import { ThemeProvider } from 'styled-components';
+import { theme } from './theme';
 import './assets/styles/global.scss';
 import { useOnOutsideClick } from './hooks'
 import { Burger, Menu } from './cmps';
-import { theme } from './theme';
 import AppHeader from './cmps/AppHeader';
 import AppFooter from './cmps/AppFooter';
 import MainApp from './pages/MainApp';
@@ -22,7 +22,7 @@ function App() {
         </div>
         <MainApp />
         <AppFooter />
-      </ThemeProvider>
+        </ThemeProvider>
   );
 }
 

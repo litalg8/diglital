@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../assets/imgs/logo.svg';
-import Resume from '../assets/imgs/LitalG-ColorCV.pdf';
+import Resume from '../assets/cv/LitalG-ColorCV.pdf';
 
 function AppFooter() {
 
@@ -9,10 +9,10 @@ function AppFooter() {
     <footer className="footer-container contact">
       <nav className="main-footer container flex justify-space">
         <span className="footer-logo"><img src={logo} alt="logo" /></span>
-        <div className="my-info flex column">
+        {/* <div className="my-info flex column">
           <p>Ramat Gan,<br></br>Israel</p>
           <div className="mobile-tel"><div className="flex">+972<span className="tel">545</span><span className="tel">822175</span></div></div>
-        </div>
+        </div> */}
         <div className="footer-links flex column">
           <a href={Resume} download="LitalG_CV"> Download my cv {'>'} </a>
           <ul className="social-list flex align-center">

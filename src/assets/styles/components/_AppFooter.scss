@@ -1,77 +1,48 @@
-.main-footer {
-    display: grid;
-    grid-template-columns: 1fr 3fr auto auto;
-    grid-gap: 0;
-    padding: 20px 0px 20px 0px;
-    @include for-mobile-layout {
-        padding: 0px;
-    }
-
-    .footer-logo {
-        width: 3.6rem;
-        justify-self: center;
-        align-self: center;
-        @include for-mobile-layout {
-            padding-left: 0.45rem;
-        }
-    }
-    .social-list li {
-        height: 30px;
-        width: 30px;
-        text-align: center;
-        border-radius: 50%;
-        color: $clr5;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        background-color: $clr6;
-        &:not(:last-child) {
-            margin: 0.2rem;
-        }
-        &:hover {
-            background-color: $clr1;
-            color: $clr2;
-        }
-    }
-
-    .my-info {
-        grid-column: 2/3;
-        width: 200px;
-        @include for-mobile-layout {
-            padding: 10px;
-        }
-        h3 {
-            color: $clr2;
-            margin: 0;
-            padding: 0;
-        }
-        p {
-            font-size: 14px;
-        }
-        .tel:not(:first-child) {
-            display: flex;
-            flex-direction: row;
-        }
-        .mobile-tel {
+footer {
+    .main-footer {
+        padding: 20px 0px;
+        .footer-logo {
+            width: 3.6rem;
+            justify-self: center;
+            align-self: center;
             @include for-mobile-layout {
-                display: none;
+                padding-left: 0.45rem;
             }
         }
-    }
-
-    .footer-links {
-        @include for-mobile-layout {
-            padding: 10px;
-            font-size: 14px; ;
-        }
-        a {
-            @include for-mobile-layout {
-            }
-            height: fit-content;
+        .social-list li {
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            border-radius: 50%;
             color: $clr5;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $clr6;
+           
+            &:not(:first-child) {
+                margin: 0.2rem;
+            }
             &:hover {
-                color: $clr4;
-                font-style: italic;
+                background-color: $clr1;
+                color: $clr2;
+            }
+        }
+
+        .footer-links {
+            @include for-mobile-layout {
+                padding: 10px;
+                font-size: 14px;
+            }
+            a {
+                @include for-mobile-layout {
+                }
+                height: fit-content;
+                color: $clr5;
+                &:hover {
+                    color: $clr4;
+                    font-style: italic;
+                }
             }
         }
     }

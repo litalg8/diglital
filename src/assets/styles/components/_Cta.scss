@@ -3,8 +3,8 @@
     background-color: $clr2;
     .cta-content {
         .info-bullets {
+
             .circle {
-                cursor: pointer;
                 margin-bottom: 20px;
                 height: 60px;
                 width: 60px;
@@ -22,19 +22,29 @@
             }
         }
         h2 {
-            padding: 10px;
+            padding: 2rem;
         }
         .company-info {
             width: 700px;
-            display:flex;
+            display: flex;
             justify-content: space-evenly;
-            @include for-mobile-layout{
+            @include for-mobile-layout {
                 display: block;
-                width: 480px;
-
+                width: 350px;
             }
         }
+        @include for-mobile-layout {
+            display: block;
+            // width: 350px;
+        }
     }
-
-
+    .toggle-btn {
+        cursor: pointer;
+        padding: 1.5rem 0;
+        text-align: center;
+        color: $clr3;
+    }
+    ul, li {
+        cursor:initial; 
+    }
 }

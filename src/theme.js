@@ -4,5 +4,3 @@ export const theme = {
     primaryHover: '#6cefd7;',
     mobile: '576px',
 }
-
-  

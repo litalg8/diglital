@@ -1,23 +1,16 @@
-import React, { useState, useContext } from 'react';
-import { ProjectContext } from '../context/ProjectContext'
-import Modal from './Modal'
+import React from 'react';
+import { Link, useLocation } from "react-router-dom";
 
 
-
-function ProjectModal() {
-    const { webProjects, designProjects } = useContext(ProjectContext)
-    console.log('projects', webProjects);
-
-    const [showModal,setShowModal] = useState(false)
-
-    const openModal=()=>{
-        setShowModal(showModal => !showModal)
-    }
+function ProjectModal({ designProject }) {
+    const location = useLocation();
     return (
-        <div className="" >
-               {showModal ? 
-            <Modal showModal={showModal} setShowModal={setShowModal} designProjects={designProjects}></Modal>
-            :null}
+        <div className="card justify-center align-center flex column">
+            <Link to={{ pathname: "/project/design/:id?", state: { background: location } }}>
+                <img src={designProject.imgUrl} />
+                <h2>{designProject.title}</h2>
+                <p>{designProject.desc}</p>
+            </Link>
         </div>
     )
 }

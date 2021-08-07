@@ -1,5 +1,4 @@
 import React, { createContext, useState } from 'react';
-import { makeId } from '../projectService'
 
 
 export const ProjectContext = createContext();
@@ -66,7 +65,7 @@ const ProjectContextProvider = (props) => {
         {
             id: 7,
             title: 'Alma Coffee Shop',
-            desc: 'digital design for facebook page',
+            desc: 'digital design for facebook',
             imgUrl: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1623078669/portfolio/1-1.png',
             type: 'javascript',
 
@@ -74,7 +73,7 @@ const ProjectContextProvider = (props) => {
         {
             id: 8,
             title: 'Alma Coffee Shop',
-            desc: 'digital design for facebook page',
+            desc: 'digital design for facebook',
             imgUrl: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1620217629/portfolio/7-7.png',
             type: 'javascript',
 
@@ -82,7 +81,7 @@ const ProjectContextProvider = (props) => {
         {
             id: 9,
             title: 'freshpoint',
-            desc: 'digital gif for facebook page',
+            desc: 'digital gif for facebook',
             imgUrl: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1620224012/portfolio/11-11.gif',
             type: 'vue',
 
@@ -90,7 +89,7 @@ const ProjectContextProvider = (props) => {
         {
             id: 10,
             title: 'freshpoint',
-            desc: 'digital gif for facebook page',
+            desc: 'digital gif for facebook',
             imgUrl: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1620224012/portfolio/10-10.gif',
             type: 'react-hooks',
 
@@ -106,7 +105,7 @@ const ProjectContextProvider = (props) => {
         {
             id: 12,
             title: 'G Rishon',
-            desc: 'digital design for facebook page',
+            desc: 'digital design for facebook',
             imgUrl:'https://res.cloudinary.com/dk67dcp9c/image/upload/v1620224012/portfolio/4-4.png',
             type: 'graphic-design',
 
@@ -130,3 +129,14 @@ const ProjectContextProvider = (props) => {
 }
 
 export default ProjectContextProvider;
+
+
+
+export function makeId(length = 5) {
+    var txt = '';
+    var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    for (var i = 0; i < length; i++) {
+        txt += possible.charAt(Math.floor(Math.random() * possible.length));
+    }
+    return txt;
+  }

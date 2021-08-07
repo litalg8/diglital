@@ -1,7 +1,6 @@
 import React from 'react';
-import Cta from '../cmps/Cta';
-import HeroSection from '../cmps/HeroSection';
 import ProjectContextProvider from '../context/ProjectContext';
+import Cta from '../cmps/Cta';
 import Projects from '../cmps/Projects';
 
 
@@ -9,7 +8,6 @@ function MainApp() {
 
     return (
         <ProjectContextProvider>
-            <HeroSection />
             <Projects />
             <Cta />
         </ProjectContextProvider>

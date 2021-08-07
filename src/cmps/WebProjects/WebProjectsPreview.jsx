@@ -4,14 +4,14 @@ import React from 'react';
 function WebProjectsPreview({ webProject }) {
 
     return (
-        <a href={webProject.url} >
-            <li className="project-card" >
-                <div className="card justify-center align-center flex column">
+        <li className="project-card" >
+            <a href={webProject.url} className="justify-center align-center flex column" >
+                <div className="card">
                     <h2>{webProject.title}</h2>
                     <p>{webProject.desc}</p>
                 </div>
-            </li>
-        </a>
+            </a>
+        </li>
     )
 }
 export default WebProjectsPreview;

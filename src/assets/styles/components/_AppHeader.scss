@@ -1,43 +1,82 @@
-.main-nav {
-    .route-nav {
-        @include for-mobile-layout {
-            visibility: hidden;
-        }
-        li:not(:last-child) {
-            margin: 1rem;
-        }
-    }
-
-    .logo {
-        padding-top: 20px;
-        @include for-mobile-layout {
-            width: 4rem;
-            margin-left: 0.5rem;
+header {
+    background-image: url("../../imgs/bgc-portfolio.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    @include for-mobile-layout {
+        background-position: right;
+        min-height: 72vh;
+        h1 {
+            margin: 0;
+            font-size: 30px;
         }
     }
+    .header-container {
+        padding: 0 5rem;
 
-    li {
-        cursor: pointer;
-        a {
+        @include for-mobile-layout {
+            padding: 0;
+        }
+        .main-nav {
+            margin-top: 0.5rem;
+            height: 12%;
+            .logo {
+                height: 3rem;
+                width: 3rem;
+                @include for-mobile-layout {
+                    margin-top: 0.3rem;
+                }
+            }
+            .route-nav li {
+                margin-top: 1rem;
+                margin-left: 3rem;
+                padding-bottom: 0.5rem;
+                transition: all 0.25s ease-in-out;
+                &:hover {
+                    padding-bottom: 0.3em;
+                    font-family: Spartan-SemiBold;
+                    border-bottom: 0.2rem $clr1 solid;
+                }
+                @include for-mobile-layout {
+                    visibility: hidden;
+                }
+            }
+        }
+        .mobile-menu {
+            border: transparent;
+            background-color: transparent;
+            cursor: pointer;
+            display: none;
+            transition: all 0.25s ease-in-out;
+        }
+        .hero-container {
+            height: 88%;
+            align-items: flex-end;
+            @include for-mobile-layout {
+                align-items: center;
+            }
+            h1:first-child {
+                margin-top: 1em;
+                letter-spacing: 0.2rem;
+            }
+            li:nth-child(3) {
+                margin-top: 2rem;
+            }
+            .hero-btn {
+                margin: 1.5rem 0;
 
-            &:hover {
-                padding-bottom: 0.3em;
-                font-family: Spartan-SemiBold;
-                border-bottom: 0.2rem $clr1 solid;
+                &:hover {
+                    a {
+                        color: $clr2;
+                        font-weight: 600;
+                    }
+                    background-color: $clr1;
+                    border-radius: 60px;
+                    border: none;
+                    transition: all 0.25s ease-in-out;
+                }
             }
         }
     }
-    div {
-        cursor: pointer;
-    }
-}
-
-.main-nav > .logo {
-    padding: 0;
-    font-size: 24px;
-    font-family: Pattaya-Regular;
-}
-
-.mobile-nav {
-    display: none;
 }
