@@ -5,9 +5,7 @@ footer {
             width: 3.6rem;
             justify-self: center;
             align-self: center;
-            @include for-mobile-layout {
-                padding-left: 0.45rem;
-            }
+
         }
         .social-list li {
             height: 30px;
