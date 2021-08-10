@@ -10,7 +10,7 @@ const AppHeader = () => {
         <header className="app-header flex justify-center">
             <div className="header-container row">
                 <nav className="main-nav container flex justify-space">
-                    <div className="logo"><NavLink to="/"><img className="logo" src={logo} alt="logo" onClick={() => history.push('/')} /></NavLink></div>
+                    <div className="logo-container"><img className="logo" src={logo} alt="logo" onClick={() => history.push('/')} /></div>
                     <ul className="route-nav">
                         <li className="item nav-item"><Link to="projects" spy={true} smooth={true}> projects</Link></li>
                         <li className="item nav-item"><Link to="about" spy={true} smooth={true}>about</Link></li>
@@ -24,8 +24,8 @@ const AppHeader = () => {
                     {/* this will be typewriter edit */}
                     <li>
                         <button className="hero-btn">
-                            <Link to="projects" spy={true} smooth={true}>see more</Link>
-                        </button>
+                        <Link to="projects" spy={true} smooth={true}>see more</Link>
+                    </button>
                     </li>
                 </ul>
             </div>
