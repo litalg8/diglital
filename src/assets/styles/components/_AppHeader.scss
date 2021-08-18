@@ -1,7 +1,7 @@
 header {
     background-image: url("../../imgs/bgc-portfolio.jpg");
     background-repeat: no-repeat;
-    background-position:left; 
+    background-position: left;
     background-size: cover;
     min-height: 100vh;
     @include for-mobile-layout {
@@ -66,24 +66,45 @@ header {
         li:nth-child(3) {
             margin-top: 2rem;
             line-height: 1;
-            h2{
-                color:$clr2; 
+            h2 {
+                color: $clr2;
                 background-color: $clr1;
-                padding:1rem; 
+                padding: 1rem;
             }
         }
-        .hero-btn {
-            margin: 1.5rem 0;
-
-            &:hover {
-                a {
+        .see-more {
+            margin: 3rem 4.9rem; 
+         
+            .scroll-btn {
+                img {
                     color: $clr2;
-                    font-weight: 600;
+                    height: 1.5rem;
+                    width: auto;
+                    -webkit-animation: 0.5s infinite alternate bob;
+                    animation: 0.5s infinite alternate bob;
                 }
-                background-color: $clr1;
-                border-radius: 60px;
-                border: none;
-                transition: all 0.25s ease-in-out;
+            }
+
+            @keyframes bob {
+                from {
+                    -webkit-transform: translateY(0%);
+                    transform: translateY(0%);
+                }
+                to {
+                    -webkit-transform: translateY(15%);
+                    transform: translateY(15%);
+                }
+            }
+
+            @-webkit-keyframes bob {
+                from {
+                    -webkit-transform: translateY(0%);
+                    transform: translateY(0%);
+                }
+                to {
+                    -webkit-transform: translateY(15%);
+                    transform: translateY(15%);
+                }
             }
         }
     }

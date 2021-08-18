@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
 import { Link } from 'react-scroll'
 import logo from '../assets/imgs/logo.svg'
-import Typewriter from 'typewriter-effect'; 
+import arrow from '../assets/imgs/icon-arrow-down.svg'
+import Typewriter from 'typewriter-effect';
 
 const AppHeader = () => {
     const history = useHistory()
@@ -21,21 +22,21 @@ const AppHeader = () => {
                     <li> <h1>Welcome!</h1></li>
                     <li> <h1><span className="bella">I'm Lital</span></h1></li>
                     <li><h2>
-                    <Typewriter onInit={(typewriter) =>{
-                        typewriter.typeString('Full Stack Developer')
-                        .pauseFor(1500)
-                        .deleteAll()
-                        .start()
-                        typewriter.typeString('Web Designer')
-                       
-                      
-                    }}
-                    />
+                        <Typewriter onInit={(typewriter) => {
+                            typewriter.typeString('Full Stack Developer')
+                                .pauseFor(1500)
+                                .deleteAll()
+                                .start()
+                            typewriter.typeString('Web Designer')
+                        }}
+                        />
                     </h2></li>
-                    <li>
-                        <button className="hero-btn">
-                        <Link to="projects" spy={true} smooth={true}>see more</Link>
-                    </button>
+                    <li className="see-more flex column align-center justify-center">
+                  
+                            <Link to="projects" spy={true} smooth={true}>see more</Link>
+                            <Link to="projects" spy={true} smooth={true} className="scroll-btn">
+                                <img src={arrow} alt="arrow-down" />
+                            </Link>
                     </li>
                 </ul>
             </div>
