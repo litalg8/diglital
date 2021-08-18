@@ -16,6 +16,7 @@
     "route": "^0.2.5",
     "sass": "^1.32.8",
     "styled-components": "^5.2.3",
+    "typewriter-effect": "^2.18.0",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
