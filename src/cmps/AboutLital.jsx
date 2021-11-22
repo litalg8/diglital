@@ -5,7 +5,7 @@ import Resume from '../assets/cv/Lital_Gottlieb_CV.docx';
 function AboutLital(props) {
 
     return (
-        <section className="about-card container">
+        <section className="about-card me container">
             <div className="about-container flex">
                 <div className="about flex column justify-center">
                     <div className="img-container">
