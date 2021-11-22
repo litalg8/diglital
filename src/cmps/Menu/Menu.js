@@ -1,19 +1,20 @@
 import React from 'react';
 import { bool } from 'prop-types'
+import { Link } from 'react-scroll';
 import { StyledMenu } from './Menu.styled';
 
-const Menu = ({open}) => {
+const Menu = ({ open, onClick }) => {
   return (
     <StyledMenu open={open}>
-      <a href="/projects">
+      <Link to="projects" spy={true} smooth={true}>
         projects
-      </a>
-      <a href="/about">
-       about
-        </a>
-      <a href="/contact">
-       contact
-        </a>
+      </Link>
+      <Link to="cta" spy={true} smooth={true} onClick={onClick}>
+        about
+      </Link>
+      <Link to="contact" spy={true} smooth={true}  >
+        contact
+      </Link>
     </StyledMenu>
   )
 }

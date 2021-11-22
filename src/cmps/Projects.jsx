@@ -5,8 +5,6 @@ import SwipeableViews from 'react-swipeable-views'
 import WebProjectsList from './WebProjects/WebProjectsList';
 import DesignProjectsList from './DesignProjects/DesignProjectsList';
 
-
-
 function Projects() {
     const { webProjects, designProjects } = useContext(ProjectContext)
     console.log('projects', webProjects);

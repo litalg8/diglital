@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
-import About from './About';
-import useVisibillityToggler from '../Hooks/useVisibilityToggler'
+import React from 'react';
+import AboutLital from './AboutLital';
 
 const Cta = (props) => {
-  const [AboutComponent, toggleCardVisibillity] = useVisibillityToggler(<About />, false)
-  const [isIconChange, setIsIconChange] = useState(false)
   return (
     <section className="cta align-center">
       <div className="cta-content container flex column padding align-center">
@@ -38,13 +35,11 @@ const Cta = (props) => {
           </ul>
         </div>
       </div>
-      <div className="visibillity-toggle container" onClick={() => setIsIconChange(!isIconChange)}>
-        <div className="toggle-btn" onClick={toggleCardVisibillity}>
-          <div className={`fas fa-chevron-down fa-2x ${isIconChange ? 'fas fa-chevron-up fa-2x' : 'fas fa-chevron-down fa-2x'}`}>
-          </div>
+      <div onClick={props.onClick} className="toggle-btn">
+        <div className={`fas fa-chevron-down fa-2x ${props.isIconChange ? 'fas fa-chevron-up fa-2x' : 'fas fa-chevron-down fa-2x'}`}>
         </div>
-        <div className="about-card">{AboutComponent}</div>
       </div>
+      {props.visibillity === true && <AboutLital />}
     </section>
   )
 }
