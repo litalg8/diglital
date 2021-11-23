@@ -17,26 +17,26 @@ function AppFooter() {
           <a href={Resume} download="LitalG_CV"> Download my cv {'>'} </a>
           <ul className="social-list flex align-center">
             <li>
-              <a href="https://www.facebook.com/lital.gottlieb" target="_blank">
+              <a href="https://www.facebook.com/lital.gottlieb" target="_blank" rel="noreferrer">
                 <div className="fab fa-facebook-f">
 
                 </div>
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/litalgottlieb" target="_blank">
+              <a href="https://twitter.com/litalgottlieb" target="_blank" rel="noreferrer">
                 <div className="fab fa-twitter">
                 </div>
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/lital.gottlieb/?hl=en" target="_blank">
+              <a href="https://www.instagram.com/lital.gottlieb/?hl=en" target="_blank" rel="noreferrer">
                 <div className="fab fa-instagram">
                 </div>
               </a>
             </li>
             <li>
-              <a href="https://www.pinterest.com/gottlieb1028/_saved/" target="_blank">
+              <a href="https://www.pinterest.com/gottlieb1028/_saved/" target="_blank" rel="noreferrer">
                 <div className="fab fa-pinterest">
                 </div></a>
             </li>

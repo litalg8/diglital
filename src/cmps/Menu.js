@@ -1,6 +1,25 @@
+import React from 'react';
+import { bool } from 'prop-types'
+import { Link } from 'react-scroll';
 import styled from 'styled-components';
 
-export const StyledMenu = styled.nav`
+const Menu = ({ open, onClick }) => {
+  return (
+    <StyledMenu open={open}>
+      <Link to="projects" spy={true} smooth={true}>
+        projects
+      </Link>
+      <Link to="cta" spy={true} smooth={true} onClick={onClick}>
+        about
+      </Link>
+      <Link to="contact" spy={true} smooth={true}  >
+        contact
+      </Link>
+    </StyledMenu>
+  )
+}
+
+const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   display: ${({ open }) => open ? 'flex' : 'none'};
@@ -37,3 +56,8 @@ export const StyledMenu = styled.nav`
       padding-top:3rem; 
   }
 `;
+
+Menu.propTypes = {
+  open: bool.isRequired
+}
+export default Menu;

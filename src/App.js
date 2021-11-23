@@ -2,8 +2,9 @@ import React, { useState, useRef } from 'react'
 import { ThemeProvider } from 'styled-components';
 import { theme } from './theme';
 import './assets/styles/global.scss';
-import { useOnOutsideClick } from './hooks'
-import { Burger, Menu } from './cmps';
+import useOnOutsideClick from './Hooks/useOnOutsideClick'
+import Burger from './cmps/Burger'
+import Menu from './cmps/Menu'
 import AppHeader from './cmps/AppHeader';
 import AppFooter from './cmps/AppFooter';
 import MainApp from './pages/MainApp';

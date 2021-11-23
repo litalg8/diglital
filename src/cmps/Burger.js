@@ -1,6 +1,18 @@
+import React from 'react';
+import { bool, func } from 'prop-types'; 
 import styled from 'styled-components';
 
-export const StyledBurger = styled.button`
+const Burger = ({open, setOpen}) => {
+  return (
+    <StyledBurger open={open} onClick={()=> setOpen(!open)}>
+      <div />
+      <div />
+      <div />
+    </StyledBurger>
+  )
+}
+
+const StyledBurger = styled.button`
   position: absolute;
   top: 4.5%;
   right: 2rem;
@@ -46,3 +58,10 @@ export const StyledBurger = styled.button`
 
 
 `;
+
+Burger.propTypes = {
+  open: bool.isRequired, 
+  setOpen: func.isRequired
+}
+
+export default Burger;

@@ -18,6 +18,7 @@
 
         .projects-swipe {
             cursor: pointer;
+
         }
 
         .project-categories {
@@ -47,6 +48,7 @@
         visibility: hidden;
         @include for-mobile-layout {
             visibility: visible;
+            font-size: 1rem;
         }
     }
 }

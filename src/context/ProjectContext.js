@@ -66,7 +66,8 @@ const ProjectContextProvider = (props) => {
             id: 7,
             title: 'Alma Coffee Shop',
             desc: 'digital design for facebook',
-            imgUrl: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1623078669/portfolio/1-1.png',
+            thumbnail: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1637689010/portfolio/Thumbnail/14-142.png',
+            fullSize:'https://res.cloudinary.com/dk67dcp9c/image/upload/v1637686547/portfolio/14-14-full.jpg',
             type: 'javascript',
 
         },
@@ -74,7 +75,8 @@ const ProjectContextProvider = (props) => {
             id: 8,
             title: 'Alma Coffee Shop',
             desc: 'digital design for facebook',
-            imgUrl: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1620217629/portfolio/7-7.png',
+            thumbnail: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1637689761/portfolio/Thumbnail/12-12.png',
+            fullSize: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1637685942/portfolio/12-12.jpg',
             type: 'javascript',
 
         },
@@ -82,7 +84,8 @@ const ProjectContextProvider = (props) => {
             id: 9,
             title: 'freshpoint',
             desc: 'digital gif for facebook',
-            imgUrl: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1620224012/portfolio/11-11.gif',
+            thumbnail: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1637688852/portfolio/Thumbnail/11-11.gif',
+            fullSize: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1620224012/portfolio/11-11.gif',
             type: 'vue',
 
         },
@@ -90,7 +93,8 @@ const ProjectContextProvider = (props) => {
             id: 10,
             title: 'freshpoint',
             desc: 'digital gif for facebook',
-            imgUrl: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1620224012/portfolio/10-10.gif',
+            thumbnail: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1637688385/portfolio/Thumbnail/10-10.gif',
+            fullSize: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1620224012/portfolio/10-10.gif',
             type: 'react-hooks',
 
         },
@@ -98,7 +102,8 @@ const ProjectContextProvider = (props) => {
             id: 11,
             title: 'shay & yaara',
             desc: 'Wedding invitation design',
-            imgUrl: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1620224012/portfolio/2-2.png',
+            thumbnail: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1637689742/portfolio/Thumbnail/2-2.png',
+            fullSize: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1620224012/portfolio/2-2.png',
             type: 'react',
 
         },
@@ -106,10 +111,12 @@ const ProjectContextProvider = (props) => {
             id: 12,
             title: 'G Rishon',
             desc: 'digital design for facebook',
-            imgUrl:'https://res.cloudinary.com/dk67dcp9c/image/upload/v1620224012/portfolio/4-4.png',
+            thumbnail:'https://res.cloudinary.com/dk67dcp9c/image/upload/v1637689737/portfolio/Thumbnail/4-4.png',
+            fullSize:'https://res.cloudinary.com/dk67dcp9c/image/upload/v1620224012/portfolio/4-4.png',
             type: 'graphic-design',
 
-        }
+        },
+
     ]);
 
 
@@ -140,3 +147,4 @@ export function makeId(length = 5) {
     }
     return txt;
   }
+

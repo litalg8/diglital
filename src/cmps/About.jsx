@@ -2,14 +2,14 @@ import React from 'react';
 import imgUrl from '../assets/imgs/me.jpg'
 import Resume from '../assets/cv/Lital_Gottlieb_CV.docx';
 
-function AboutLital(props) {
+function About(props) {
 
     return (
         <section className="about-card me container">
             <div className="about-container flex">
                 <div className="about flex column justify-center">
                     <div className="img-container">
-                        <img src={imgUrl} alt="my-image" />
+                        <img src={imgUrl} alt="lital" />
                     </div>
                     <h2> Lital Gottlieb </h2>
                     <h3>Ramat Gan, Israel</h3>
@@ -27,7 +27,7 @@ function AboutLital(props) {
                     </p>
                     <div className="btn-container flex justify-space">
                         <button className="about-btn"> <a href={Resume} download="LitalG_CV"> download cv </a></button>
-                        <button className="about-btn"><a target="_blank" href="https://github.com/litalg8">check out my github</a></button>
+                        <button className="about-btn"><a target="_blank" href="https://github.com/litalg8" rel="noreferrer">check out my github</a></button>
                     </div>
                 </div>
             </div>
@@ -35,4 +35,4 @@ function AboutLital(props) {
     )
 }
 
-export default AboutLital;
+export default About;

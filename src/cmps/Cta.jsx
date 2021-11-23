@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutLital from './AboutLital';
+import About from './About';
 
 const Cta = (props) => {
   return (
@@ -39,7 +39,7 @@ const Cta = (props) => {
         <div className={`fas fa-chevron-down fa-2x ${props.isIconChange ? 'fas fa-chevron-up fa-2x' : 'fas fa-chevron-down fa-2x'}`}>
         </div>
       </div>
-      {props.visibillity === true && <AboutLital />}
+      {props.visibillity === true && <About />}
     </section>
   )
 }

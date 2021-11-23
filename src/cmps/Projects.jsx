@@ -6,8 +6,8 @@ import WebProjectsList from './WebProjects/WebProjectsList';
 import DesignProjectsList from './DesignProjects/DesignProjectsList';
 
 function Projects() {
-    const { webProjects, designProjects } = useContext(ProjectContext)
-    console.log('projects', webProjects);
+    const { webProjects, designProjects } = useContext(ProjectContext);
+    // console.log('projects', webProjects);
     const [view, setView] = useState(0)
     const history = useHistory()
     const location = useLocation()

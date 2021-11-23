@@ -2,8 +2,7 @@ import React from 'react'
 import DesignProjectsPreview from './DesignProjectsPreview'
 import { NavLink } from 'react-router-dom'
 
-function DesignProjectsList({ designProjects }) {
-
+function DesignProjectsList({ designProjects}) {
     return (
         <>
             <section className="projects-nav flex align-center justify-center column">

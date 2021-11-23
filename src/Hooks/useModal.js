@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-export default () => {
-    const [modal, setModal] = useState(false);
-    const [modalContent, setModalContent] = useState('im modal content');
-
-    const handleModal =(content = false)=>{
-        setModal(!modal); 
-        if(content) {
-            setModalContent(content)
-        }
+const useModal = () => {
+    const [isShowing, setIsShowing] = useState(false);
+    function toggle() {
+        setIsShowing(!isShowing)
     }
-return {modal, handleModal,modalContent}
-}
+    return { isShowing, toggle }
+};
+
+export default useModal;
