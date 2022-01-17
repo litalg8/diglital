@@ -7,7 +7,7 @@ function DesignProjectsPreview({ designProject }) {
     return (
         <>
             {/* <button> PROJECT</button> */}
-            <li className="project-card" onClick={toggle} >
+            <li className="design-project" onClick={toggle} >
                 <div className="card justify-center align-center flex column">
                     <img src={designProject.thumbnail} alt={designProject.title}/>
                 </div>

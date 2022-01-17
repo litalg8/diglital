@@ -18,8 +18,8 @@ const Modal = ({ isShowing, hide, designProject }) => isShowing ? ReactDOM.creat
                 <span className="img_for_mobile">
                 <img src={designProject.thumbnail} alt={designProject.title}/>
                 </span>
-                <h2>{designProject.title}</h2>
-                <p>{designProject.desc}</p>
+                {/* <h2>{designProject.title}</h2>
+                <p>{designProject.desc}</p> */}
             </div>
         </div>
     </>, document.body
