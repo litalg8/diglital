@@ -26,5 +26,27 @@
             max-width: 500px;
             padding:2rem; 
         }
+        .modal-mobile{
+            @include for-mobile-layout {
+                z-index: 100;
+                background-color: transparent;
+                position:relative; 
+                margin: 0 auto;
+               
+            }
+            .img_for_desktop{
+                display: block;
+                @include for-mobile-layout {
+                    display:none;  
+                }
+            }
+            .img_for_mobile{
+                display: none;
+                @include for-mobile-layout {
+                    display:block;  
+                }
+            }
+
+        }
     }
 

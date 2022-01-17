@@ -67,7 +67,7 @@ const ProjectContextProvider = (props) => {
             title: 'Alma Coffee Shop',
             desc: 'digital design for facebook',
             thumbnail: 'https://res.cloudinary.com/dk67dcp9c/image/upload/v1637689010/portfolio/Thumbnail/14-142.png',
-            fullSize:'https://res.cloudinary.com/dk67dcp9c/image/upload/v1637686547/portfolio/14-14-full.jpg',
+            fullSize:'https://res.cloudinary.com/dk67dcp9c/image/upload/v1637686547/portfolio/14-14.jpg',
             type: 'javascript',
 
         },

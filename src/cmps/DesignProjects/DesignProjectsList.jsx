@@ -2,7 +2,7 @@ import React from 'react'
 import DesignProjectsPreview from './DesignProjectsPreview'
 import { NavLink } from 'react-router-dom'
 
-function DesignProjectsList({ designProjects}) {
+function DesignProjectsList({ designProjects }) {
     return (
         <>
             <section className="projects-nav flex align-center justify-center column">
@@ -17,12 +17,12 @@ function DesignProjectsList({ designProjects}) {
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <h2 className="projects-swipe projects">
+                            swipe for web projects ᐳ
+                        </h2>
+                    </li>
                 </ul>
-                <h2 className="projects-swipe projects">
-                    swipe for web projects ᐳ
-                </h2>
-
-
             </section>
             <ul className="project-grid flex container">
                 {designProjects.map(designProject =>
@@ -30,7 +30,6 @@ function DesignProjectsList({ designProjects}) {
                 )}
             </ul>
         </>
-
     )
 }
 

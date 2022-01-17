@@ -20,21 +20,19 @@ function WebProjectsList({ webProjects }) {
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <h2 className="projects-swipe projects">
+                            ᐸ swipe for design projects
+                        </h2>
+                    </li>
                 </ul>
-                <h2 className="projects-swipe projects">
-                    ᐸ swipe for design projects
-                </h2>
-
-
             </section>
-
             <ul className="project-grid flex container">
                 {webProjects.map(webProject =>
                     <WebProjectsPreview webProject={webProject} key={webProject.id} />
                 )}
             </ul>
         </>
-
     )
 }
 

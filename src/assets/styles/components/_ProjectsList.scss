@@ -11,11 +11,11 @@
     text-transform: uppercase;
     text-align: center;
     .main-projects {
-        padding: 1rem;
-        li {
-            padding: 2rem;
+        padding: 2rem;
+        li:nth-child(2){
+            padding-top:1rem; 
         }
-
+        
         .projects-swipe {
             cursor: pointer;
 
