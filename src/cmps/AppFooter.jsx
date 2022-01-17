@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../assets/imgs/logo.svg';
-import Resume from '../assets/cv/LitalG-ColorCV.pdf';
+import Resume from '../assets/cv/LitalGottlieb-Resume.pdf';
 
 function AppFooter() {
 
@@ -14,7 +14,7 @@ function AppFooter() {
           <div className="mobile-tel"><div className="flex">+972<span className="tel">545</span><span className="tel">822175</span></div></div>
         </div> */}
         <div className="footer-links flex column">
-          <a href={Resume} download="LitalG_CV"> Download my cv {'>'} </a>
+          <a href={Resume} download="LitalGottlieb_CV"> Download my cv {'>'} </a>
           <ul className="social-list flex align-center">
             <li>
               <a href="https://www.facebook.com/lital.gottlieb" target="_blank" rel="noreferrer">
