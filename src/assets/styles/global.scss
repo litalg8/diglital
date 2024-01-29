@@ -1,0 +1,22 @@
+// Setup
+@import "setup/functions.scss";
+@import "setup/variables.scss";
+@import "setup/typography.scss";
+@import "setup/mixins.scss";
+
+// Basics
+@import "basics/helpers.scss";
+@import "basics/layout.scss";
+@import "basics/base.scss";
+@import "basics/links.scss";
+@import "basics/buttons.scss";
+
+// Components
+@import "components/AppHeader.scss"; 
+@import "components/AppFooter.scss"; 
+@import "components/ProjectsList.scss"; 
+@import "components/ProjectsPreview.scss"; 
+@import "components/Cta.scss"; 
+@import "components/Modal.scss"; 
+@import "components/About.scss"; 
+

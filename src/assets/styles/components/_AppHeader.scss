@@ -1,0 +1,110 @@
+header {
+    background-image: url("../../imgs/bgc-portfolio.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    min-height: 100vh;
+    @include for-mobile-layout {
+        background-position: right;
+        min-height: 72vh;
+        h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+    }
+}
+.header-container {
+    padding: 0 5rem;
+
+    @include for-mobile-layout {
+        padding: 0;
+    }
+    .main-nav {
+        margin-top: 0.5rem;
+        height: 12%;
+        .logo-container {
+            img {
+                height: 3rem;
+                width: 3rem;
+            }
+            @include for-mobile-layout {
+                margin: 0.75rem 0.5rem;
+            }
+        }
+        .route-nav li {
+            margin-top: 1rem;
+            margin-left: 3rem;
+            padding-bottom: 0.5rem;
+            transition: all 0.25s ease-in-out;
+            &:hover {
+                padding-bottom: 0.3em;
+                font-family: Spartan-SemiBold;
+                border-bottom: 0.2rem $clr1 solid;
+            }
+            @include for-mobile-layout {
+                visibility: hidden;
+            }
+        }
+    }
+    .mobile-menu {
+        border: transparent;
+        background-color: transparent;
+        cursor: pointer;
+        display: none;
+        transition: all 0.25s ease-in-out;
+    }
+    .hero-container {
+        height: 88%;
+        align-items: flex-end;
+        @include for-mobile-layout {
+            align-items: center;
+        }
+        h1:first-child {
+            margin-top: 1em;
+            letter-spacing: 0.2rem;
+        }
+        li:nth-child(3) {
+            margin-top: 2rem;
+            line-height: 1;
+            h2 {
+                color: $clr2;
+                background-color: $clr1;
+                padding: 1rem;
+            }
+        }
+        .see-more {
+            margin: 3rem 4.9rem; 
+            .scroll-btn {
+                img {
+                    color: $clr2;
+                    height: 1.5rem;
+                    width: auto;
+                    -webkit-animation: 0.5s infinite alternate bob;
+                    animation: 0.5s infinite alternate bob;
+                }
+            }
+
+            @keyframes bob {
+                from {
+                    -webkit-transform: translateY(0%);
+                    transform: translateY(0%);
+                }
+                to {
+                    -webkit-transform: translateY(15%);
+                    transform: translateY(15%);
+                }
+            }
+
+            @-webkit-keyframes bob {
+                from {
+                    -webkit-transform: translateY(0%);
+                    transform: translateY(0%);
+                }
+                to {
+                    -webkit-transform: translateY(15%);
+                    transform: translateY(15%);
+                }
+            }
+        }
+    }
+}

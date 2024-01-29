@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin:0%; 
+    padding:0%; 
+}
+
+::selection {
+    background-color: $clr1;
+    color: $clr2;
+}
+
+html {
+    font-family: Spartan-Regular;
+    line-height: 1.6;
+    color: $clr2;
+    background-color: #ffffff;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+}
+
+nav {
+    background-color: $clr3;
+    text-transform: uppercase;
+}
+
+footer {
+    width: 100%;
+    background-color: $clr3;
+}
+
+h1 {
+    font-family: Spartan-Regular;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: none;
+}
+
+h2 {
+    font-family: Spartan-SemiBold;
+    color: $clr5;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    @include for-mobile-layout {
+        text-align: center;
+        line-height: 1.7;
+    }
+}
+
+h3,
+h4,
+h5,
+h6 {
+    color: $clr3;
+    font-family: Spartan-Light;
+    margin: 0 0 0.6em;
+    font-weight: normal;
+    line-height: 1;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: Spartan-Regular;
+    color: $clr2;
+}
+
+ul,
+li {
+    list-style-type: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.bella {
+    font-family: Bella-Regular;
+    color: $clr2;
+    font-size: 48px;
+    margin-right: 0.5rem;
+}
+

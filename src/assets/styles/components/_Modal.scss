@@ -1,0 +1,52 @@
+.modal-overlay{
+    position:fixed; 
+    top:0; 
+    left:0; 
+    z-index: 1040;
+    width:100vw; 
+    height:100vh; 
+    background-color: rgba(19, 19, 19, 0.431);
+}
+    .modal-wrapper{
+        position:fixed; 
+        top:0; 
+        left:0; 
+        z-index: 1050;
+        width:100%; 
+        height:100%; 
+        overflow-x: hidden;
+        overflow-y: auto;
+        outline:0; 
+
+        .modal{
+            z-index: 100;
+            background-color: transparent;
+            position:relative; 
+            margin: 0 auto; 
+            max-width: 500px;
+            padding:2rem; 
+        }
+        .modal-mobile{
+            @include for-mobile-layout {
+                z-index: 100;
+                background-color: transparent;
+                position:relative; 
+                margin: 0 auto;
+               
+            }
+            .img_for_desktop{
+                display: block;
+                @include for-mobile-layout {
+                    display:none;  
+                }
+            }
+            .img_for_mobile{
+                display: none;
+                @include for-mobile-layout {
+                    display:block;  
+                }
+            }
+
+        }
+    }
+

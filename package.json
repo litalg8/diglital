@@ -1,0 +1,57 @@
+{
+  "name": "portfolio-app",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^12.8.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^5.0.1",
+    "react-scroll": "^1.8.2",
+    "react-swipeable-views": "^0.14.0",
+    "route": "^0.2.5",
+    "sass": "^1.32.8",
+    "styled-components": "^5.2.3",
+    "typewriter-effect": "^2.18.0",
+    "web-vitals": "^1.1.1"
+  },
+  "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/litalg8/diglital.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/litalg8/diglital/issues"
+  },
+
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+  
+}

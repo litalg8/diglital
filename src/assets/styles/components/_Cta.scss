@@ -1,0 +1,50 @@
+.cta {
+    width: 100%;
+    background-color: $clr2;
+    .cta-content {
+        .info-bullets {
+
+            .circle {
+                margin-bottom: 20px;
+                height: 60px;
+                width: 60px;
+                text-align: center;
+                border-radius: 50%;
+                color: $clr5;
+                background-color: $clr6;
+                &:hover {
+                    background-color: $clr1;
+                    color: $clr2;
+                }
+            }
+            &:not(:last-child) {
+                margin: 0.2rem;
+            }
+        }
+        h2 {
+            padding: 2rem;
+        }
+        .company-info {
+            width: 700px;
+            display: flex;
+            justify-content: space-evenly;
+            @include for-mobile-layout {
+                display: block;
+                width: 350px;
+            }
+        }
+        @include for-mobile-layout {
+            display: block;
+            // width: 350px;
+        }
+    }
+    .toggle-btn {
+        cursor: pointer;
+        padding: 1rem 0;
+        text-align: center;
+        color: $clr3;
+    }
+    ul, li {
+        cursor:initial; 
+    }
+}
