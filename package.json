@@ -2,6 +2,12 @@
   "name": "portfolio-app",
   "version": "1.0.0",
   "description": "portfolio",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/litalg8/diglital/issues"
+  },
+
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
@@ -25,14 +31,9 @@
       "test": "react-scripts test",
       "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/litalg8/diglital.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/litalg8/diglital/issues"
+  "engines":{
+    "node": "20.x",
+    "npm": "10.x"
   },
 
   "eslintConfig": {
@@ -52,6 +53,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+
   }
+  
   
 }
