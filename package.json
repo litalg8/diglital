@@ -7,7 +7,6 @@
   "bugs": {
     "url": "https://github.com/litalg8/diglital/issues"
   },
-
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
@@ -26,16 +25,15 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-      "start": "react-scripts start",
-      "build": "react-scripts build",
-      "test": "react-scripts test",
-      "eject": "react-scripts eject"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "engines":{
+  "engines": {
     "node": "20.x",
     "npm": "10.x"
   },
-
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -53,8 +51,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-
   }
-  
-  
 }
