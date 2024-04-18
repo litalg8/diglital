@@ -35,11 +35,11 @@ const Cta = (props) => {
           </ul>
         </div>
       </div>
-      <div onClick={props.onClick} className="toggle-btn">
-        <div className={`fa fa-chevron-down fa-2x ${props.isIconChange ? 'fa fa-chevron-up fa-2x' : 'fa fa-chevron-down fa-2x'}`}>
+      {/* <div onClick={props.onClick} className="toggle-btn">
+        <div className={`fa fa-chevron-down fa-2x ${props.isIconChange ? 'fa fa-chevron-down fa-2x' : 'fa fa-chevron-up fa-2x'}`}>
         </div>
-      </div>
-      {props.visibillity === true && <About />}
+      </div> */}
+      {/* {props.visibillity === true && <About />} */}
     </section>
   )
 }

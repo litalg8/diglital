@@ -15,11 +15,11 @@ function App() {
   const [visibillity, setVisibillity] = useState(false)
   const [isIconChange, setIsIconChange] = useState(false)
   const node = useRef()
-  useOnOutsideClick(node, () => setOpen(false));
-  const toggleAbout = () => {
-    setVisibillity(!visibillity)
-    setIsIconChange(!isIconChange)
-  }
+  // useOnOutsideClick(node, () => setOpen(false));
+  // const toggleAbout = () => {
+  //   setVisibillity(!visibillity)
+  //   setIsIconChange(!isIconChange)
+  // }
 
   return (
     <ThemeProvider theme={theme}>
